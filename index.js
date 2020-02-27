@@ -28,7 +28,8 @@ const main = async () => {
     if (command === 'exit') {
         process.exit(0);
 
-    } else if (command === 'rectangle') {
+    } 
+    else if (command === 'rectangle') {
         await calculateRectangleArea();
     }
     else {
