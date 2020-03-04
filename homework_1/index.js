@@ -35,7 +35,7 @@ const removeUser = async () => {
 
 //отображение списка
 const getUserList = async () => {
-    console.log('Список всех пользователей:')
+    console.log('Список всех пользователей:');
     console.table(phoneBook);
 }
 
@@ -44,8 +44,8 @@ const getUser = async () => {
     console.log('Введите имя');
     const name = await getLine();
     const phone = phoneBook[name];
-    console.log(`Пользователь ${name}, номер телефона ${phone}`)
-}
+    console.log(`Пользователь ${name}, номер телефона ${phone}`);
+};
 
 
 // функция старта программы
@@ -62,7 +62,7 @@ const main = async () => {
         await removeUser();
     } else if (command === 'user') {
         await getUser();
-    } else if (command === 'list') { 
+    } else if (command === 'list') {
         await getUserList();
     } else {
         console.log('Неизвестаня команда');
