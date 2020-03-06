@@ -39,10 +39,10 @@ const removeUser = async () => {
 
 //отображение списка с помощью цикла for(In)
 const getUserList = async () => {
-        for (let key in phoneBook) {
-      console.log(`Контакт с именем ${key} и номером ${phoneBook[key]}`);
-                }
-    };
+    for (let key in phoneBook) {
+    console.log(`Контакт с именем ${key} и номером ${phoneBook[key]}`);
+ }
+};
 
 //поиск контакта по имени.
 const getUser = async () => {
